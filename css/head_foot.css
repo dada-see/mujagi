@@ -1,0 +1,488 @@
+@charset "utf-8";
+/* main.css */
+#wrap{
+    position: relative;
+    width: 100%;
+}
+#skipNavi{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#skipNavi a{
+    position: absolute;
+    top: -39px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 39px;   
+    background-color: #fff;
+    color: #444;
+    text-align: center;
+    line-height: 39px;
+}
+#skipNavi a:focus{
+    top: 0;
+}
+/* 390px -헤더 */
+#header{
+    position: relative;
+    margin-bottom: 80px;
+}
+.h_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #000;
+}
+.logo{
+    margin-left: 1vw;
+}
+.logo a{
+    padding: 10px 15px;
+    color: #000;
+    font-size: 5vw;
+    font-weight: 500;
+}
+.h01_left, .h01_right{
+    display: none;
+}
+.h02_btn{
+    cursor: pointer;
+}
+.h02_btn span{
+    font-size: 7vw;
+    padding: 10px 15px;
+}
+.h02_side{
+    margin-left: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 4vw 6vw;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 99999;
+    overflow-y: scroll;
+    transition: .4s;
+}
+.h02_list{
+    margin-bottom: 4vw;
+    text-align: center;
+}
+.h02_list:last-child{
+    margin-bottom: 0;
+}
+.h02_list h5{
+    margin-bottom: 2vw;
+    font-size: 3vw;
+    line-height: 1em;
+}
+.h02_list > ul > li{
+    margin-bottom: 1vw;
+}
+.h02_list > ul > li > a{
+    padding: 5px;
+    font-size: 3vw;
+    color: #777;
+    line-height: 1em;
+}
+.h02_list > ul > li:hover a{
+    color: #121212;
+}
+.h02_closeBt{
+    display: inline-block;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    padding: 5px;
+    font-size: 6vw;
+    cursor: pointer;
+}
+.goTop{
+    position: fixed;
+    bottom: 5vw;
+    right: 2vw;
+    padding: 0 5px;
+    z-index: 15;
+    cursor: pointer;
+}
+/* 390px - 푸터1 */
+.f01{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #777;
+}
+.f1_in{
+    position: relative;
+    padding-bottom: 20px;
+}
+.f_left{
+    margin-bottom: 10vw;
+}
+.f_cs{
+    padding: 0 70px 0 45px;
+}
+.f_cs h5, .f_right h5{
+    padding-bottom: 4px;
+    margin-bottom: 4vw;
+    font-size: 3.5vw;
+    line-height: 1em;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.f_cs p span, .f_off_showroom .off_title{
+    display: inline-block;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
+    font-size: 3.4vw;
+    line-height: 1em;
+}
+.f1_office, .f1_bank{
+    margin-bottom: 2.7vw;
+    font-size: 3.3vw;
+    line-height: 1.4em;
+}
+.f_off_showroom{
+    padding: 0 70px 0 45px;
+    margin-bottom: 3vw;
+    font-size: 3.3vw;
+    line-height: 1.4em;
+}
+.f_right{
+    padding: 0 70px 0 45px;
+}
+.f_right{
+    font-size: 3.3vw;
+    line-height: 1.5em;
+}
+.sns_insta a{
+    position: absolute;
+    top: 0;
+    right: 45px;
+    display: block;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(../img/ico_insta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+}
+/* 390px - 푸터2 */
+.f02{
+    padding-bottom: 40px;
+}
+.f2_in ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.f2_in a{
+    display: inline-block;
+    padding: 5px;
+    color: #000;
+    font-size: 3.4vw;
+    font-weight: 500;
+    line-height: 1em;
+}
+/* 768px 시작 (태블릿) */
+@media screen and (min-width:768px){
+    /* 768px - 헤더 */
+    .h_top{
+        height: 80px;
+    }
+    .logo{
+        margin-left: 2vw;
+    }
+    .logo a{
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    .h02_list h5{
+        font-size: 2.2vw;
+    }
+    .h02_list > ul > li > a{
+        font-size: 2vw;
+        color: #777;
+    }
+    .h02_closeBt{
+        font-size: 4vw;
+    }
+    /* 768px - 푸터1 */ 
+    .f1_in{
+        display: flex;
+        padding-bottom: 30px;
+    }
+    .f_left{
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .f_cs, .f_off_showroom{
+        padding: 0 30px 0 70px;
+        box-sizing: border-box;
+    }
+    .f_cs h5, .f_right h5{
+        margin-bottom: 3vw;
+        font-size: 2.5vw;
+    }
+    .f_cs > p > span, .f_off_showroom .off_title{
+        margin-bottom: 1vw;
+        font-size: 2.4vw;
+    }
+    .f1_office, .f1_bank{
+        margin-bottom: 2.4vw;
+        font-size: 2.2vw;
+    }
+    .f_off_showroom{
+        margin-bottom: 0;
+        font-size: 2.2vw;
+    }
+    .f_right{
+        width: 50%;
+        padding: 0 100px 0 0;
+        box-sizing: border-box;
+    } 
+    .f_right{
+        font-size: 2.2vw;
+        line-height: 1.4em;
+    }
+    .sns_insta a{
+        width: 4vw;
+        height: 4vw;
+        right: 70px;
+    }
+    /* 768px - 푸터2 */     
+    .f02{
+        padding-bottom: 40px;
+    }
+    .f2_in ul{
+        justify-content: flex-start;
+        padding: 0 60px;
+    }
+    .f2_in li{
+        margin-right: 10px;
+    }
+    .f2_in a{
+        padding: 5px 10px;
+        font-size: 2.4vw;
+    }
+}
+/* 1024px 시작 (pc) */
+@media screen and (min-width:1024px){
+    /* 1024px - 헤더 */
+    .h_top{
+        box-sizing: border-box;
+        align-items: baseline;
+    }
+    .logo{
+        margin: 0;
+    }
+    .logo a{
+        padding: 10px 30px;
+        font-size: 30px;
+        line-height: 80px;
+    }
+    .move{
+        overflow: hidden;
+    }
+    .h01_left{
+        display: flex;
+    }
+    .h01_left > div{
+        width: 140px;
+        margin: 0 10px;
+        text-align: center;
+    }
+    .h01_left > div > h5{
+        padding: 0 10px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 75px;
+        border: 2px solid transparent;
+    }
+    .h01_left > .move > h5{
+        color: #121212;
+        border-right-color: #777;
+        border-left-color: #777;
+        border-top-color: #777;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+    .h01_about h5:hover{
+        background-color: #fff;
+        border: 2px solid #777;
+        color: #121212;
+        line-height: 72px;
+    }
+    .h01_depth{
+        display: none;
+        position: relative;
+        margin-top: -2px;
+        padding: 20px 0;
+        background-color: #fff;
+        border-right: 2px solid #777;
+        border-left: 2px solid #777;
+        border-bottom: 2px solid #777;
+        z-index: 1;
+    }
+    .h01_depth li{
+        margin-bottom: 10px;
+    }
+    .h01_depth a{
+        display: block;
+        padding: 5px 10px;
+        color: #888;
+        font-size: 16px;
+        line-height: 1.2em;
+    }
+    .h01_depth a:hover{
+        color: #121212;
+    }
+    .h01_right{
+        display: flex;
+        margin-right: 30px;
+    }
+    .h01_right > div{
+        text-align: center;
+    }
+    .h01_right > div > h5{
+        border: 2px solid transparent;
+    }
+    .h01_mypage{
+        width: 130px;
+    }
+    .h01_mypage.move h5{
+        background-color: #fff;
+        color: #121212;
+        border-right-color: #777;
+        border-left-color: #777;
+        border-top-color: #777;
+        box-sizing: border-box;
+    }
+    .h01_right > div > h5{
+        color: #121212;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 75px;
+    }
+    .h01_cart a{
+        display: block;
+        padding-left: 10px;
+        color: #121212;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 75px;
+    }
+    .h_02{
+        display: none;
+    }
+    .h02_btn span{
+        color: #121212;
+        font-size: 50px;
+    }
+    .h02_side{
+        width: 500px;
+        padding: 30px 40px;
+    }
+    .h02_list h5{
+        font-size: 25px;
+    }
+    .h02_list > ul > li > a{
+        font-size: 20px;
+    }
+    .h02_closeBt{
+        font-size: 40px;
+    }
+    .goTop{
+        bottom: 30px;
+    }
+        /* 1024px - 푸터1 */
+    .f01{
+        margin-bottom: 30px;
+    }
+    .f1_in{
+        padding-bottom: 20px;
+    }
+    .f_left{
+        display: flex;
+        width: 60%;
+        padding: 0 0 0 70px;
+    }
+    .f_cs{
+        padding: 0 30px 0 0;
+        width: 40%;
+    }
+    .f_cs h5,  .f_right h5{
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        text-underline-offset: 6px;
+    }
+    .f1_office, .f1_bank{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .f_cs > p > span{
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+    .f_off_showroom{
+        width: 60%;
+        padding: 0 30px 0 0;
+        font-size: 15px;
+    }
+    .f_off_showroom .off_title{
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        vertical-align: top;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+    .f_right{
+        width: 40%;
+        padding: 0 100px 0 0;
+        font-size: 15px;
+    }
+    .sns_insta a{
+        width: 30px;
+        height: 30px;
+    }
+    /* 1024px - 푸터2 */   
+    .f02{
+        padding-bottom: 50px;
+    }
+    .f2_in li{
+        margin-right: 15px;
+    }
+    .f2_in a{
+        padding: 10px;
+        font-size: 18px;
+    }    
+}
+/* 1440px 시작 (와이드 pc) */
+@media screen and (min-width:1440px){
+     /* 1440px -헤더 */    
+     #header::after{
+        bottom: -30%;
+     }
+    /* 1440px - 푸터1 */
+    .f1_in{
+        max-width: 1600px;
+        margin: 0 auto 40px;
+    }   
+    /* 1440px - 푸터2 */
+    .f2_in{
+        max-width: 1600px;
+        margin: 0 auto 50px;
+    }   
+}

@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* main.css */
+#header{
+    margin-bottom: 40px;
+}
+/* 본문 */
+#main{
+    margin-bottom: 80px;
+}
+.gms_list{
+    margin: 0 45px;
+}
+.gms_list .photo{
+    width: 100%;
+}
+.gms_list p{
+    margin-bottom: 30px;
+}
+.photo img{
+    width: 100%;
+    height: auto;
+}
+/* 본문 - 페이저*/
+.gms_pager{
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gms_pager p{
+    margin: 0 10px;
+}
+.gms_pager p span{
+    color: #000;
+    font-size: 6vw;
+    font-variation-settings: 'wght' 100;
+}
+.gms_pager p:hover span{
+    color: #888;
+}
+.prev span{
+    transform: rotate(180deg);
+}
+.page_now{
+    padding-bottom: 2px;
+    font-size: 3vw;
+    line-height: 1em;
+}
+/* 768px 시작 (태블릿) */
+@media screen and (min-width:768px){
+    #wrap::after, #wrap::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -10000000;
+        width: 1px;
+        height: 100%;
+        background-color: #ddd;
+    }
+    #wrap::after{
+        left: 5%;
+    }
+    #wrap::before{
+        right: 5%;
+    }
+    .h_top{
+        background-color: #fff;
+    }
+    /* 본문 */
+    #main{
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ddd;
+    }
+    .gms_list{
+        margin: 0 70px;
+    }
+    .gms_list p{
+        margin-bottom: 50px;
+    }
+    /* 본문 - 페이저*/
+    .gms_pager p{
+        margin: 0 20px;
+    }
+    .gms_pager p span{
+        font-size: 5vw;
+    }
+    .page_now{
+        font-size: 2vw;
+    }
+}
+
+/* 1024px 시작 (pc) */
+@media screen and (min-width:1024px){
+    #wrap::after{
+        left: 3%;
+    }
+    #wrap::before{
+        right: 3%;
+    }
+    /* 본문 */
+    #main{
+        padding-bottom: 70px;
+    }
+    .m_in{
+        max-width: 1200px;
+        margin: 0 auto 140px;
+    }
+    .gms_list{
+        margin: 0 70px;
+    }
+    .gms_list p{
+        margin-bottom: 50px;
+    }
+    /* 본문 - 페이저*/
+    .gms_pager p{
+        margin: 0 30px;
+    }
+    .gms_pager p span{
+        font-size: 50px;
+    }
+    .page_now{
+        padding-bottom: 8px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    #wrap::after{
+        left: 2%;
+    }
+    #wrap::before{
+        right: 2%;
+    }
+    /* 1440px - 본문1 */
+    #main{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width:1800px){
+    #wrap::after{
+        left: 7%;
+    }
+    #wrap::before{
+        right: 7%;
+    }
+}
